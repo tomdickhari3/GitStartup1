@@ -17,7 +17,7 @@ private void beforeclass() {
 	  
 @AfterClass
 private void afterclass() {
-  quit();
+//  quit();
  }
 @BeforeMethod         
 private void before() {
