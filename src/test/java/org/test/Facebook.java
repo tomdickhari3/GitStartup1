@@ -29,7 +29,7 @@ private void before() {
   Date d = new Date();
   System.out.println("Ending time : " + d);
  }
-@Test(priority = -4)
+@Test
 private void test1() throws InterruptedException{
  SoftAssert s = new SoftAssert();
   urlLaunch ("https://www.facebook.com/")	;
@@ -43,11 +43,11 @@ private void test1() throws InterruptedException{
   click(l.getBtnLogin());
   s.assertAll();                                                             //capture assert result
   }
-@Test(priority= -1)
+@Test
 private void test2() {
   System.out.println(1/0); // failed testCase
  }
-@Test(priority= 4, invocationCount=2)
+@Test
 private void test3() throws InterruptedException {
    urlLaunch ("https://www.facebook.com/")	;
  FcRegisterPage r = new FcRegisterPage();
